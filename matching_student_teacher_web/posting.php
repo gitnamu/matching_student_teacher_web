@@ -1,5 +1,5 @@
 <?php
-$postsFolder = "./data/posts.json";
+$fileName = "./data/posts.json";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
   $postTitle = $_POST['postTitle'];
@@ -8,11 +8,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $startDate = $_POST['startDate'];
   $endDate = $_POST['endDate'];
   $id = "admin";  //$_GET['id'];
+  $writtenDate = date("Y-m-d");
 
-  $jsonId = $id . date("YmdHis");
   $data = array(
-    'jsonId' => $jsonId,
     'title' => $postTitle,
+    'id' => $id,
+    'writtenDate' => $writtenDate,
     'content' => $postContent,
     'studentNum' => $studentNum,
     'startDate' => $startDate,

@@ -1,0 +1,125 @@
+.hidden {
+  display: none;
+}
+
+/*Javascript에서 className 부여로 요소를 숨기기 위함*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 300px;
+  font-family: 'Baloo Tammudu 2', 'Noto Sans KR', sans-serif;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+#bgImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  min-width: 1880px;
+  ;
+  max-height: 1400px;
+  min-height: 1200px;
+  z-index: -5;
+  filter: brightness(30%);
+}
+
+#login-form {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+
+#login-form input:hover::-webkit-input-placeholder {
+  /*placeholder color change*/
+  color: rgb(50, 50, 50);
+}
+
+#login-form input:first-child {
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px;
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  transition: all, 0.4s;
+}
+
+#login-form input:first-child:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#login-form input:first-child:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#login-form input:nth-child(2) {
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px;
+  width: 240px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  transition: all, 0.4s;
+}
+
+#login-form input:nth-child(2):hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#login-form input:nth-child(2):focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#login-form input:nth-child(3) {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(80, 80, 80);
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+  transition: all, 0.4s;
+}
+
+#login-form input:nth-child(3):hover {
+  background-color: rgba(255, 255, 255, 0.8)
+}
+
+#login-form input:nth-child(3):active {
+  background-color: darkgray;
+  color: white;
+  outline: none;
+}
+#signUp{
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(80, 80, 80);
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+  transition: all, 0.4s;
+}

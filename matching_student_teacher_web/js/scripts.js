@@ -8,14 +8,16 @@
 document.addEventListener("DOMContentLoaded", getPosts);
 
 function getPosts(){
-  $.post("./getPosts.php", function(result){
+  var type = 0;
+  json_data = {"type": type};
+  $.post("./getPosts.php",json_data, function(result){
     if(result){
-      var playListArr = JSON.parse(result);
+      var postListArr = JSON.parse(result);
       var table = document.getElementById("postTable");
       //var tableRows = table.rows.length;
-      for (var i = 0; i < playListArr.length; i++) {
-        var aMusicJSON = playListArr[i];
-        var postList = JSON.parse(aMusicJSON);
+      for (var i = 0; i < postListArr.length; i++) {
+        var postListJSON = postListArr[i];
+        var postList = JSON.parse(postListJSON);
 
         var trElement = document.createElement('tr');
         var tdElement = document.createElement('td');
@@ -24,8 +26,12 @@ function getPosts(){
         trElement.appendChild(tdElement);
 
         tdElement = document.createElement('td');
+//        aElement = document.createElement('a');
+//        var newAttr= document.createAttribute("href");
+//        aElement.setAttribute(newAttr, "#!");
         txtNode = document.createTextNode(postList["title"]);
         tdElement.appendChild(txtNode);
+//        tdElement.appendChild(aElement);
         trElement.appendChild(tdElement);
 
         tdElement = document.createElement('td');
@@ -35,7 +41,7 @@ function getPosts(){
         table.appendChild(trElement);
 
         tdElement = document.createElement('td');
-        txtNode = document.createTextNode(postList["writeDate"]);
+        txtNode = document.createTextNode(postList["writtenDate"]);
         tdElement.appendChild(txtNode);
         trElement.appendChild(tdElement);
         table.appendChild(trElement);
