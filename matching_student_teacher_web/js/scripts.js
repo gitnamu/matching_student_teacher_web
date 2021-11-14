@@ -7,6 +7,7 @@
 // Use this file to add JavaScript to your project
 document.addEventListener("DOMContentLoaded", getPosts);
 
+// 테이블 내용 json 파일에서 가져오기
 function getPosts(){
   var type = 0;
   json_data = {"type": type};
@@ -14,7 +15,6 @@ function getPosts(){
     if(result){
       var postListArr = JSON.parse(result);
       var table = document.getElementById("postTable");
-      //var tableRows = table.rows.length;
       for (var i = 0; i < postListArr.length; i++) {
         var postListJSON = postListArr[i];
         var postList = JSON.parse(postListJSON);
@@ -26,12 +26,11 @@ function getPosts(){
         trElement.appendChild(tdElement);
 
         tdElement = document.createElement('td');
-//        aElement = document.createElement('a');
-//        var newAttr= document.createAttribute("href");
-//        aElement.setAttribute(newAttr, "#!");
+        aElement = document.createElement('a');
+        aElement.setAttribute("href", "./postPage.php"+"?index="+i);
         txtNode = document.createTextNode(postList["title"]);
-        tdElement.appendChild(txtNode);
-//        tdElement.appendChild(aElement);
+        aElement.appendChild(txtNode);
+        tdElement.appendChild(aElement);
         trElement.appendChild(tdElement);
 
         tdElement = document.createElement('td');
