@@ -1,8 +1,3 @@
-.hidden {
-  display: none;
-}
-
-/*Javascript에서 className 부여로 요소를 숨기기 위함*/
 * {
   box-sizing: border-box;
 }
@@ -109,7 +104,6 @@ h1{
   outline: none;
 }
 #signUp{
-  text-align: center;
   width: 100px;
   height: 40px;
   border-radius: 30px;
@@ -122,4 +116,8 @@ h1{
   outline: none;
   cursor: pointer;
   transition: all, 0.4s;
+}
+#buttonDiv{
+  padding-top: 30px;
+  text-align: center;
 }

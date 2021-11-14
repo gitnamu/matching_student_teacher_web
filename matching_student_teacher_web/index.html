@@ -13,11 +13,13 @@
 </head>
 <body>
   <h1>Matching Student & Teacher</h1>
-    <form action="" id="login-form" method="post">
-        <input type="text" placeholder="What is your ID?">
-        <input type="text" placeholder="What is your PW?">
-        <input type="submit" value="Log In">
+    <form action="login.php" id="login-form" method="post">
+        <input type="text" name="loginId" placeholder="What is your ID?">
+        <input type="text" name="loginPw" placeholder="What is your PW?">
+        <input type="submit" id="loginButton" value="Log In">
     </form>
-    <button type="button" id="signUp" onclick="location.href='signup.html'">Sign Up</button>
+    <div id="buttonDiv">
+      <button type="button" id="signUp" onclick="location.href='signup.html'">Sign Up</button>
+    </div>
 </body>
 </html>

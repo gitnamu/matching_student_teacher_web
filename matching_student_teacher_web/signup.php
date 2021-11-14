@@ -1,10 +1,12 @@
 <?php
 $id = $pw = $type = "";
+$career = array();
 $count=0;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
   $id = test_input($_POST['userId']);
   $pw = test_input($_POST['userPw']);
   $type = test_input($_POST['userType']);
+  $career = $_POST['userCareer'];
 }
 function test_input($data){
   $data = trim($data);
@@ -28,6 +30,7 @@ if($count === 0){
   $array['userId']=$id;
   $array['userPw']=$pw;
   $array['userType']=$type;
+  $array['userCareer']=$career;
   $json = json_encode($array);
   file_put_contents("person.json", $json."\n", FILE_APPEND | LOCK_EX);
 }
