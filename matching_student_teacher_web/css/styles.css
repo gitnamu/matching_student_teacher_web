@@ -11343,9 +11343,8 @@ header.masthead h1, header.masthead .h1 {
     padding: 7rem;
   }
 }
-
 .testimonials {
-  padding-top: 7rem;
+  padding-top: 5rem;
   padding-bottom: 7rem;
 }
 .testimonials .testimonial-item {
@@ -11378,4 +11377,56 @@ header.masthead h1, header.masthead .h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+
+/* 추가한 부분 */
+.navbar-default {
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+  background-image:      -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f8f8));
+  background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+
+.teacherSearch{
+  min-height: calc(1.5em + 2rem + 2px);
+  padding: 1rem 1.25rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+.banner{
+  position: relative;
+  max-height: 15rem;
+  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.banner-search{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.profileModal{
+  text-align: center;
+  display: none;
+
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 20%;
+  width: 40%;
+  height: 70%;
+  padding: 30px;
+  border-style: outset;
+  border-width:2px;
+  border-radius: 5px;
+  z-index: 1;
+
+  background-color: white;
 }
