@@ -6,6 +6,7 @@ function careerAdd() {
 
   var newCareer = document.createElement('input');
   newCareer.setAttribute('type', 'text');
+  newCareer.setAttribute('class', 'userCareer');
   newCareer.setAttribute('name', 'userCareer[]');
   careerDiv.appendChild(newCareer);
 }
