@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 [
     {"userId":"12312312","userPw":"1251241241","userType":"teacher","userRate":"4.9","userCareer":"c"},
     {"userId":"cccc","userPw":"123123","userType":"teacher","userRate":"4.9","userCareer":"13fvdsav"},
     {"userId":"13412","userPw":"ccc3223","userType":"teacher","userRate":"4.9","userCareer":["1qdfsqew","4qw34aw","fcaewew"]},
     {"userId":"aaa","userPw":"111","userType":"student","userCareer":[""]}
 ]
+=======
+{"userId":"12312312","userPw":"1251241241","userType":"teacher","userCareer":"c"}
+{"userId":"cccc","userPw":"123123","userType":"teacher","userCareer":"13fvdsav"}
+{"userId":"13412","userPw":"ccc3223","userType":"teacher","userCareer":["1qdfsqew","4qw34aw","fcaewew"]}
+{"userId":"aaa","userPw":"111","userType":"student","userCareer":[""]}
+>>>>>>> e64755076acf06c22b8d6ba84a89c8b5204697a3

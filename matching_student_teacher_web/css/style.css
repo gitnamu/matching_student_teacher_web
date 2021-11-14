@@ -41,7 +41,7 @@ h1{
   color: rgb(50, 50, 50);
 }
 
-#login-form input:first-child {
+#login-form input:first-child, #login-form input:nth-child(2), #userId, #userPw, .userCareer {
   text-align: center;
   color: white;
   font-size: 1.3rem;
@@ -52,38 +52,17 @@ h1{
   transition: all, 0.4s;
 }
 
-#login-form input:first-child:hover {
+#login-form input:first-child:hover, #login-form input:nth-child(2):hover , #userId:hover, #userPw:hover, .userCareer:hover{
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-#login-form input:first-child:focus {
+#login-form input:first-child:focus, #login-form input:nth-child(2):focus , #userId:focus, #userPw:focus, .userCareer:focus{
   outline: none;
   border-bottom: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
 }
 
-#login-form input:nth-child(2) {
-  text-align: center;
-  color: white;
-  font-size: 1.3rem;
-  padding: 10px;
-  width: 240px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  transition: all, 0.4s;
-}
-
-#login-form input:nth-child(2):hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-#login-form input:nth-child(2):focus {
-  outline: none;
-  border-bottom: 1px solid white;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-#login-form input:nth-child(3) {
+#login-form input:nth-child(3), #signUp, #careerAddButton, #careerSubButton, #signUpButton {
   margin-left: 20px;
   width: 100px;
   height: 40px;
@@ -108,18 +87,8 @@ h1{
   color: white;
   outline: none;
 }
-#signUp{
+
+#signUpButtonDiv{
+  padding-top: 30px;
   text-align: center;
-  width: 100px;
-  height: 40px;
-  border-radius: 30px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.6);
-  color: rgb(80, 80, 80);
-  font-size: 1rem;
-  font-weight: 600;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  outline: none;
-  cursor: pointer;
-  transition: all, 0.4s;
 }

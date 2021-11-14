@@ -11,16 +11,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500;600&family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <script defer src="js/background.js"></script>
+  <script defer src="js/signup.js"></script>
 </head>
 
 <body>
-  <form class="signUpForm" action="signUp.php" method="post">
+  <form id="signUpForm" action="signup.php" method="post">
     ID<input type="text" id="userId" name="userId">
     PASSWARD<input type="password" id="userPw" name="userPw">
     <select id="type" name="userType">
       <option value="teacher">Teacher</option>
       <option value="student">Student</option>
     </select>
+    <div id="careerDiv">
+      경력사항
+      <button type="button" id="careerAddButton">+</button>
+      <button type="button" id="careerSubButton">-</button>
+      <input type="text" class="userCareer" name="userCareer[]">
+    </div>
     <button type="submit" id="signUpButton" name="signUpButton">Submit</button>
   </form>
 </body>
