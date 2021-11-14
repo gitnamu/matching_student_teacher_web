@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <form class="signUpForm" action="signup.php" method="post">
+  <form id="signUpForm" action="signup.php" method="post">
     ID<input type="text" id="userId" name="userId">
     PASSWARD<input type="password" id="userPw" name="userPw">
     <select id="type" name="userType">
@@ -26,7 +26,7 @@
       경력사항
       <button type="button" id="careerAddButton">+</button>
       <button type="button" id="careerSubButton">-</button>
-      <input type="text" name="userCareer[]">
+      <input type="text" class="userCareer" name="userCareer[]">
     </div>
     <button type="submit" id="signUpButton" name="signUpButton">Submit</button>
   </form>

@@ -14,14 +14,13 @@ function test_input($data){
   $data = htmlspecialchars($data);
   return $data;
 }
-if(file_exists("person.json")){
-  $existJson = file_get_contents("person.json");
+if(file_exists("data/person.json")){
+  $existJson = file_get_contents("data/person.json");
   $strTok = explode("\n", $existJson);
   for($i = 0; $i < count($strTok)-1; $i++){
     $searchId = json_decode($strTok[$i]);
      if($searchId->{'userId'}===$id){
        $count = 1;
-
      }
   }
 }
@@ -32,6 +31,8 @@ if($count === 0){
   $array['userType']=$type;
   $array['userCareer']=$career;
   $json = json_encode($array);
-  file_put_contents("person.json", $json."\n", FILE_APPEND | LOCK_EX);
+  file_put_contents("data/person.json", $json."\n", FILE_APPEND | LOCK_EX);
+  echo("<script>alert('회원가입 성공했습니다.');</script>");
+  echo("<script>location.replace('mainPage.html');</script>");
 }
  ?>

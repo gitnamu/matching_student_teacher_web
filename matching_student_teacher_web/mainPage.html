@@ -13,34 +13,14 @@
 </head>
 <body>
   <h1>Matching Student & Teacher</h1>
-    <form action="" id="login-form" method="post">
-        <input type="text" placeholder="What is your ID?">
-        <input type="text" placeholder="What is your PW?">
+    <form action="login.php" id="login-form" method="post">
+        <input type="text" name = "loginId" placeholder="What is your ID?">
+        <input type="text" name = "loginPw" placeholder="What is your PW?">
         <input type="submit" value="Log In">
     </form>
-    <button type="button" id="signUp" onclick="location.href='signup.html'">Sign Up</button>
-
-    <section>
-      <button type="button" id="writePostButton"><a href="./writingPost.html">글쓰기</a></button>
-      <table id="postTable">
-        <th>번호</th>
-        <th>제목</th>
-        <th>작성자</th>
-        <th>등록일</th>
-      </table>
-    </section>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <div id="signUpButtonDiv">
+      <button type="button" id="signUp" onclick="location.href='signup.html'">Sign Up</button>
+    </div>
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- 추가한 부분 -->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
